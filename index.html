@@ -35,11 +35,15 @@
             </div>
         </div>
     </nav>
+<!--  нет тега main  -->
+<!--  section должна содержать заголвок h2-h6  -->
     <section class="main">
         <div class="container">
             <div class="main__wrapper">
+                <!--       само название title уже намекает на то, что тут надо h2-h6 применять          -->
                 <div class="main__title">Save your data storage here.</div>
                 <p class="main__subtitle">Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others.</p>
+<!--     тэг а не может находится в  button, в данном контексте это ссылка, а не кнопка        -->
                 <button class="button">
                     <a href="#features-link"  class="button__link">Learn more</a>
                 </button>
@@ -49,6 +53,7 @@
             </div>
         </div>
     </section>
+<!--  именование секций порадковым номером не читаемо и не информативно, если измениться дизайн и секция переместиться на другое место?   -->
     <section class="second" id="second-link">
         <div class="container">
             <div class="second__wrapper">
@@ -57,9 +62,10 @@
                 </div>
                 <div class="second__block">
                     <div class="second__title">We are a high-level data storage bank</div>
+<!--      second__descr => second__desc              -->
                     <div class="second__descr">
-                        The place to store various data that you can access at any time through the internet  and where you can carry it. 
-                        This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse. 
+                        The place to store various data that you can access at any time through the internet  and where you can carry it.
+                        This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse.
                     </div>
                 </div>
             </div>
@@ -70,6 +76,7 @@
             <div class="features__title">Features</div>
             <div class="features__subtitle">Some of the features and advantages that we provide for those of you <br> who store data in this Data Warehouse.</div>
             <div class="features__wrapper">
+<!--        features__block идет повторение - значит это списко,  features__wrapper => ul, а не div       -->
                 <div class="features__block">
                     <div class="features__img">
                         <img src="img/pic-1.png" alt="search" class="features__pic">
@@ -77,8 +84,11 @@
                     <div class="features__elem fon_one">
                         <div class="features__elem-title">Search Data</div>
                         <div class="features__elem-descr">Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time.</div>
+<!--             features__elem-link это ссылка           -->
+<!--               features__link тут span features__link => features__text или features__title         -->
                         <div class="features__elem-link">
                             <a href="#features-link" class="features__link">Learn more</a>
+<!--        features__icons это div                    -->
                             <a href="#features-link" class="features__icons">
                                 <img src="icons/arrow.png" alt="arr">
                             </a>
@@ -125,7 +135,7 @@
                     <div class="features__elem fon_four">
                         <div class="features__elem-title">Security Code</div>
                         <div class="features__elem-descr">Data Security is one of our best facilities. Allows for your files
-                            to be safer. The file can be secured with a code or password that 
+                            to be safer. The file can be secured with a code or password that
                             you created, so only you can open the file.</div>
                         <div class="features__elem-link">
                             <a href="#features-link" class="features__link">Learn more</a>
@@ -182,7 +192,9 @@
                         <div class="reviews__circle"></div>
                     </div>
                     <div class="reviews__slider-arrow">
+<!--      reviews__arrow это как раз кнопка, поэтому  button                  -->
                         <div class="reviews__arrow">
+<!--    в данной ситуации для кнопок надо предусмотреть span с текстом который скрыть visually-hidden, если стили не подгрузятся, то пользователю не будет понятен функционал    -->
                             <div></div>
                         </div>
                         <div class="reviews__arrow arrow_active">
@@ -205,11 +217,16 @@
                         <p class="footer__logo-name">DataWarehouse</p>
                     </div>
                     <div class="footer__adress">
+                        <!--    применение <br> плохая практика, перенос стилями при помощи max-width      -->
                         Warehouse Society, 234 <br>
-                        Bahagia Ave Street 
+                        Bahagia Ave Street
                         PRBW 29281
                     </div>
                     <div class="footer__telegram">
+<!--     телефон и почта задаютмся вот так
+<a href="mailto:mail@mail.ru">Напишите нам</a>
+<a href="tel:+79001111111">+7-900-111-11-11</a>
+-->
                         <div class="footer__mail">info@warehouse.project</div>
                         <a href="tel:12112" class="footer__phone">1-232-3434 <span>(Main)</span></a>
                     </div>
@@ -220,6 +237,7 @@
                 </div>
                 <div class="footer__social">
                     <div class="footer__social-title">Social Media</div>
+<!--        footer__block тут повтор - это список            -->
                     <div class="footer__block">
                         <a href="#" class="footer__circle">
                             <img src="icons/facebook.png" alt="facebook" class="footer__img">

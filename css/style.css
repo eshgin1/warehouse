@@ -1,9 +1,15 @@
+/* Не подключен normalize */
 *{
+    /* дефолтный шрифт на body  */
     font-family: 'Ubuntu', sans-serif;
+/*  тут должно быть указано box-sizing: border-box;  */
 }
+/* нет отстпупов html{ => html { */
 html{
     scroll-behavior: smooth;
  }
+/* после классов надо бы делать отступы */
+/* нет дефолтных стилей */
 body{
     background: #ffff;
     margin: 0;
@@ -28,9 +34,10 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: 160%;
+    /* Цвета не вынесены в переменные */
     color: #4B5D68;
     text-decoration: none;
-    
+
 }
 .nav__menu-item:hover{
     transform: scale(1.1);
@@ -153,7 +160,8 @@ body{
 .features__elem{
     width: 220px;
     padding: 49px 49px 33px 172px;
-    
+/*  лишние отступы  */
+
 }
 .fon_one{
     background: url(../img/fon1.png) center center/cover no-repeat;
@@ -187,7 +195,7 @@ body{
     margin-top: 20px;
     display: flex;
     align-items: center;
-} 
+}
 .features__link{
     font-weight: 800;
     font-size: 16px;
@@ -288,7 +296,7 @@ body{
     margin-top: 60px;
     display: flex;
     justify-content: space-between;
-    
+
 }
 .reviews__slider-circle{
     display: flex;
@@ -300,7 +308,7 @@ body{
     height: 5px;
     background: #FFFFFF;
     border-radius: 5px;
-    
+
 }
 .reviews__circle_active{
     width: 10px;
@@ -454,6 +462,6 @@ span{
     width: 50px;
     height: 50px;
     background: #212353;
-    border-radius: 100%;   
+    border-radius: 100%;
 }
 
